@@ -6,7 +6,7 @@ app.use(express.static('public'));
 var port = process.env.PORT || 3000;
 
 http.listen(port,() => {
-    console.log('listening on *:${PORT}');
+    console.log('Server running at port `+port');
 });
 
 // app.get('/', (req,res) => {
