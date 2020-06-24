@@ -1,23 +1,24 @@
 {
-  "name": "sockets_codingrainbow",
+  "name": "web socket js",
   "version": "1.0.0",
-  "description": "sockets example live on youtube ",
-  "main": "socket.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node socket.js"
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "12.17.x"
   },
-  "keywords": [
-    "sockets",
-    "p5.js",
-    "node"
-  ],
-  "author": "Sachiko Nakajima",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
+    "bufferutil": "^4.0.1",
     "express": "^4.17.1",
     "node-static": "^0.7.11",
-    "socket.io": "^2.3.0"
-  },
-  "devDependencies": {}
+    "socket.io": "^2.3.0",
+    "utf-8-validate": "^5.0.2",
+    "ws": "^7.3.0"
+  }
 }
