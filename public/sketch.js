@@ -3,7 +3,7 @@ var socket;
 function setup() {
   createCanvas(400, 400);
   background(51);
-  socket = io.connect('http://localhost:3000');
+  socket = io.connect('https://git.heroku.com/ancient-citadel-81925.git');
   socket.on('mouse', newDrawing);
 }
 
