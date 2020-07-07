@@ -22,7 +22,7 @@ function newConnection(socket){
     socket.on('mouse', mouseMsg);
 
     function mouseMsg(data){
-        socket.emit('mouse', data);
+        io.emit('mouse', data);
         console.log(data);
     }
 }
