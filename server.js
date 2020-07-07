@@ -20,9 +20,9 @@ function newConnection(socket){
     console.log('new connection: ' + socket.id);
 //    socket.on('person', personMsg);
     socket.on('mouse', mouseMsg);
-    
+
     function mouseMsg(data){
-        socket.broadcast.emit('mouse', data);
+        socket.emit('mouse', data);
         console.log(data);
     }
 }
