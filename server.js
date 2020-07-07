@@ -20,11 +20,7 @@ function newConnection(socket){
     console.log('new connection: ' + socket.id);
 //    socket.on('person', personMsg);
     socket.on('mouse', mouseMsg);
-
-    function personMsg(data) {
-        socket.broadcast.emit('person', data);
-        console.log(data);
-    }
+    
     function mouseMsg(data){
         socket.broadcast.emit('mouse', data);
         console.log(data);

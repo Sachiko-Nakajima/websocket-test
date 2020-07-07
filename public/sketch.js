@@ -5,7 +5,6 @@ function setup() {
   createCanvas(400, 400);
   background(51);
   socket = io.connect('https://heroku-websocket-test3.herokuapp.com/');
-  socket.on('mouse', newDrawing);
 }
 
 function newDrawing(data){
@@ -31,7 +30,8 @@ function mouseDragged(){
 
 
 function draw() {
-if(time%10==0){
+  socket.on('mouse', newDrawing);
+  if(time%10==0){
   background(51);
 }
 time++;
