@@ -1,4 +1,5 @@
 var socket;
+var time = 0;
 
 function setup() {
   createCanvas(400, 400);
@@ -30,4 +31,9 @@ function mouseDragged(){
 
 
 function draw() {
+if(time%10==0){
+  background(51);
 }
+time++;
+}
+
